@@ -7,7 +7,6 @@ import mooSound from './moo.mp3';
 const ImageGallery = () => {
   const [images, setImages] = useState([]);
   const [expandedImage, setExpandedImage] = useState(null);
-
   const handleFileChange = (e) => {
     const files = Array.from(e.target.files);
     const newImages = files.map((file) => ({
@@ -17,7 +16,6 @@ const ImageGallery = () => {
       isEditing: true,
     }));
     setImages((prevImages) => [...prevImages, ...newImages]);
-
     const moo = new Audio(mooSound);
     moo.play();
   };
