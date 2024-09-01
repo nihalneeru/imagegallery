@@ -1,0 +1,118 @@
+/* General styles */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url('https://source.unsplash.com/random'); /* Example background image */
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .gallery-container {
+    background-color: rgba(255, 255, 255, 0.8); /* Make the gallery container semi-transparent */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Upload button styles */
+  .upload-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #4285F4;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .volume-notice {
+    font-size: 14px;
+    color: #4285F4;
+    margin-top: 0;
+  }
+  
+  /* Grid layout */
+  .image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .image-grid-item {
+    position: relative;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background-color: #ffffff;
+  }
+  
+  .grid-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    cursor: pointer;
+  }
+  
+  /* Caption container */
+  .caption-container {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .caption-input {
+    flex: 1;
+    margin-right: 10px;
+  }
+  
+  .icon-button {
+    background: none;
+    border: none;
+    color: #4285F4;
+    cursor: pointer;
+    margin-left: 5px;
+  }
+  
+  .delete-button {
+    margin-top: 10px;
+    width: 90%;
+    padding: 8px 0;
+    font-size: 14px;
+    border-radius: 5px;
+    background-color: #f28b82;
+    color: white;
+    cursor: pointer;
+    border: none; /* Remove outline */
+  }
+  
+  /* Modal styles */
+  .modal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .expanded-image {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  

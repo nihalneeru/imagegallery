@@ -1,0 +1,26 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-resiaimagegallery-dev-508d5-authRole",
+      "UnauthRoleArn": "arn:aws:iam::783764599726:role/amplify-resiaimagegallery-dev-508d5-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::783764599726:role/amplify-resiaimagegallery-dev-508d5-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-resiaimagegallery-dev-508d5-deployment",
+      "UnauthRoleName": "amplify-resiaimagegallery-dev-508d5-unauthRole",
+      "StackName": "amplify-resiaimagegallery-dev-508d5",
+      "StackId": "arn:aws:cloudformation:us-east-2:783764599726:stack/amplify-resiaimagegallery-dev-508d5/1c9ee8c0-680b-11ef-b4c3-0255eb6396c3",
+      "AmplifyAppId": "dt5n4icn2q1bo"
+    },
+    "categories": {
+      "auth": {
+        "resiaimagegallery7ba6fee6": {}
+      },
+      "hosting": {
+        "S3AndCloudFront": {}
+      },
+      "storage": {
+        "s30435ed7e": {}
+      }
+    }
+  }
+}

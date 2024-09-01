@@ -1,0 +1,14 @@
+{
+  "resourceName": "s30435ed7e",
+  "policyUUID": "0435ed7e",
+  "bucketName": "resiaimagegallerydc02691093d144c9ab1768d0dc77c2",
+  "storageAccess": "auth",
+  "guestAccess": [],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ",
+    "DELETE"
+  ],
+  "triggerFunction": "NONE",
+  "groupAccess": {}
+}
