@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Button, Flex, Heading, TextField, View } from '@aws-amplify/ui-react';
 import { StorageImage } from '@aws-amplify/ui-react-storage';
-import { FaEdit, FaCheck } from 'react-icons/fa';
+import { FaEdit } from 'react-icons/fa';
 import './ImageGallery.css';
 import mooSound from './moo.mp3';
 
@@ -102,6 +102,7 @@ const ImageGallery = () => {
   return (
     <Flex direction="column" alignItems="center" justifyContent="center" padding="20px" className="gallery-container">
       <Heading level={2} color="#4285F4" marginBottom="20px">My S3 Image Gallery</Heading>
+      <p style={{ marginBottom: '10px', color: '#f44336', fontWeight: 'bold' }}>Volume up!!!</p>
       <input id="file-upload" type="file" onChange={handleFileChange} multiple hidden />
       <label htmlFor="file-upload" className="upload-button">
         Upload Images
@@ -140,9 +141,10 @@ const ImageGallery = () => {
                   />
                   <Button
                     onClick={() => handleCaptionSave(image.key)}
-                    className="icon-button"
+                    className="save-button"
+                    style={{ marginLeft: '8px' }}
                   >
-                    <FaCheck />
+                    Save
                   </Button>
                 </div>
               ) : (
