@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Button, Flex, Heading, TextField, View } from '@aws-amplify/ui-react';
 import { FaEdit, FaCheck } from 'react-icons/fa';
 import './ImageGallery.css';
-import mooSound from './moo.mp3'; // Import the moo sound
+import mooSound from './moo.mp3'; 
 
 const ImageGallery = () => {
   const [images, setImages] = useState([]);
@@ -11,14 +11,13 @@ const ImageGallery = () => {
   const handleFileChange = (e) => {
     const files = Array.from(e.target.files);
     const newImages = files.map((file) => ({
-      id: URL.createObjectURL(file), // Generate a temporary URL for the image
+      id: URL.createObjectURL(file), 
       file,
       caption: '',
       isEditing: true,
     }));
     setImages((prevImages) => [...prevImages, ...newImages]);
 
-    // Play moo sound on successful upload
     const moo = new Audio(mooSound);
     moo.play();
   };
@@ -61,7 +60,7 @@ const ImageGallery = () => {
 
   return (
     <Flex direction="column" alignItems="center" justifyContent="center" padding="20px" className="gallery-container">
-      <Heading level={2} color="#4285F4" marginBottom="20px">Your Image Gallery</Heading>
+      <Heading level={2} color="#4285F4" marginBottom="20px">My Image Gallery</Heading>
       <input id="file-upload" type="file" onChange={handleFileChange} multiple hidden />
       <label htmlFor="file-upload" className="upload-button">
         Upload Images

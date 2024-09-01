@@ -3,19 +3,18 @@ body, html {
     height: 100%;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background-image: url('https://source.unsplash.com/random'); /* Example background image */
+    background-image: url('https://source.unsplash.com/random'); 
     background-size: cover;
     background-position: center;
   }
   
   .gallery-container {
-    background-color: rgba(255, 255, 255, 0.8); /* Make the gallery container semi-transparent */
+    background-color: rgba(255, 255, 255, 0.8); 
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
   
-  /* Upload button styles */
   .upload-button {
     display: inline-block;
     padding: 10px 20px;
@@ -34,7 +33,6 @@ body, html {
     margin-top: 0;
   }
   
-  /* Grid layout */
   .image-grid {
     display: flex;
     flex-wrap: wrap;
@@ -62,7 +60,6 @@ body, html {
     cursor: pointer;
   }
   
-  /* Caption container */
   .caption-container {
     width: 90%;
     display: flex;
@@ -93,10 +90,9 @@ body, html {
     background-color: #f28b82;
     color: white;
     cursor: pointer;
-    border: none; /* Remove outline */
+    border: none; 
   }
   
-  /* Modal styles */
   .modal-container {
     position: fixed;
     top: 0;
